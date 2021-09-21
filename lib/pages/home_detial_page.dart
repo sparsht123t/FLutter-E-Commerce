@@ -11,8 +11,8 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      backgroundColor: MyTheme.creamColor,
+      appBar: AppBar(backgroundColor: Colors.transparent),
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
         color: Colors.white,
         child: ButtonBar(
@@ -24,18 +24,17 @@ class HomeDetailPage extends StatelessWidget {
               onPressed: () {},
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
-                    MyTheme.darkBluishColor,
+                    context.theme.buttonColor,
                   ),
                   shape: MaterialStateProperty.all(
                     StadiumBorder(),
                   )),
-              child: "Buy".text.make(),
+              child: "Add to cart".text.make(),
             ).wh(100, 50)
           ],
         ).p32(),
       ),
       body: SafeArea(
-        
         bottom: false,
         child: Column(
           children: [
@@ -49,7 +48,7 @@ class HomeDetailPage extends StatelessWidget {
               arcType: VxArcType.CONVEY,
               edge: VxEdge.TOP,
               child: Container(
-                color: Colors.white,
+                color:  context.cardColor,
                 width: context.screenWidth,
                 child: Column(
                   children: [
