@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:e_commerce/core/store.dart';
 import 'package:e_commerce/models/cart.dart';
 import 'package:e_commerce/models/catalog.dart';
 import 'package:e_commerce/utils/routes.dart';
@@ -11,8 +10,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
+import 'package:http/http.dart' as http;
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -22,6 +21,9 @@ class _HomePageState extends State<HomePage> {
   final int days = 30;
 
   final String name = "Codepur";
+  
+  final url = "https://api.jsonbin.io/b/604dbddb683e7e079c4eefd3";
+
 
   @override
   void initState() {
@@ -30,14 +32,18 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future loadData() async {
-    final catalogJson =
-        await rootBundle.loadString("assets/files/catalog.json");
-    Map<String, dynamic> jsonData = jsonDecode(catalogJson);
 
-    var productsData = jsonData["products"];
-    CatalogModel.items =
-        List.from(productsData).map((e) => Item.fromJson(e)).toList();
+    // final catalogJson =
+    //     await rootBundle.loadString("assets/files/catalog.json");
+    // Map<String, dynamic> jsonData = jsonDecode(catalogJson);
 
+    final response = await http.get(Uri.parse(url));
+    final catalogJson = response.body;
+    final decodedData = jsonDecode(catalogJson);
+    var productsData = decodedData["products"];
+    CatalogModel.items = List.from(productsData)
+        .map<Item>((item) => Item.fromJson(item))
+        .toList();
     setState(() {});
   }
 
