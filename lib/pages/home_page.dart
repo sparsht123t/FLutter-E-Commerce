@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:e_commerce/core/store.dart';
+import 'package:e_commerce/models/cart.dart';
 import 'package:e_commerce/models/catalog.dart';
 import 'package:e_commerce/utils/routes.dart';
 import 'package:e_commerce/widgets/home_widget/catalog-list.dart';
@@ -41,16 +43,23 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final _cart = (VxState.store).cart;
     return Scaffold(
         backgroundColor: context.canvasColor,
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+      floatingActionButton: VxBuilder(
+          mutations: {AddMutation,RemoveMutation,}, builder: (BuildContext context, store, VxStatus? status,) =>FloatingActionButton(onPressed: ()=>  Navigator.pushNamed(context, MyRoutes.cartRoute,),
           backgroundColor: context.theme.buttonColor,
-          child: Icon(
-            CupertinoIcons.cart,
-            color: Colors.white,
-          ),
-        ),
+          child: Icon(CupertinoIcons.cart,color: Colors.white,),
+          
+        ).badge(
+              color: Vx.gray200,
+              size: 22,
+              count: _cart.items.length,
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              )),
+      ),
         body: SafeArea(
           child: Container(
             padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
