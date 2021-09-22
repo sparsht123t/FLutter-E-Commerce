@@ -39,9 +39,7 @@ class CartModel {
 
   // Remove Item
 
-  void remove(Item item) {
-    _itemIds.remove(item.id);
-  }
+ 
 }
 
 class AddMutation extends VxMutation {
@@ -51,5 +49,15 @@ class AddMutation extends VxMutation {
   @override
   perform() {
        (VxState.store).cart._itemIds.add(item.id);
+  }
+}
+
+class RemoveMutation extends VxMutation<MyStore> {
+  final Item item;
+
+  RemoveMutation(this.item);
+  @override
+  perform() {
+    (VxState.store).cart._itemIds.remove(item.id);
   }
 }
