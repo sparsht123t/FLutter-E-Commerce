@@ -23,6 +23,18 @@
 
 
 
+Installation
+
+```
+flutter pub get
+```
+Usage 
+
+```
+flutter run
+```
+
+
 ### How To Run
 -----------------------
 #### Clone this repo
