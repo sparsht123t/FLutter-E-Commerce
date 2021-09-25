@@ -1,16 +1,18 @@
-# e_coomerce_
+Flutter E-commerece Application
 
-A new Flutter project.
+This is a shopping Application which includes functionality of authentication , addtocart and state management using VelocityX vxState
 
-## Getting Started
+Some Screenshots
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+(https://user-images.githubusercontent.com/51333268/134757653-5ea3d551-6447-4a3f-b62b-4284ab1b054b.PNG)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+(https://user-images.githubusercontent.com/51333268/134757693-654271c6-1735-4986-84fa-8a4d6e7eb215.PNG)
+
+(https://user-images.githubusercontent.com/51333268/134757712-2f38c9c3-c33f-41d7-a823-707bc9ea6da3.PNG)
+
+
+DARK MODE ENABLED
+
+(https://user-images.githubusercontent.com/51333268/134757748-4dffe694-6ce8-42f5-9f1d-a83ea26864c5.PNG)
