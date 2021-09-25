@@ -1,4 +1,4 @@
-# Flutter E-commerece Application
+# Flutter E-commerce Application
 
 ✅  State Management (VxState)\
 ✅  Firebase Firestore\
