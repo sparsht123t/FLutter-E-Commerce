@@ -1,11 +1,11 @@
 Flutter E-commerece Application
 
-✅ State Management (VxState)
-✅ Firebase Firestore
-✅ VelocityX
-✅ HeroAnimation
-✅ Json Data
-✅ Dark Mode
+✅ State Management (VxState)\
+✅ Firebase Firestore\
+✅ VelocityX\
+✅ HeroAnimation\
+✅ Json Data\
+✅ Dark Mode\
 
 Some Screenshots
 
@@ -24,8 +24,8 @@ DARK MODE ENABLED
 
 
 
-How To Run
------------------------
-Clone this repo
-Run flutter packages get
-Run flutter run (remember open simulator or connect physical device, iOS auto run additional command pod install)
+How To Run\
+-----------------------\
+Clone this repo\
+Run flutter packages get\
+Run flutter run (remember open simulator or connect physical device, iOS auto run additional command pod install)\
