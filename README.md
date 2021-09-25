@@ -5,7 +5,7 @@ Flutter E-commerece Application
 ✅ VelocityX\
 ✅ HeroAnimation\
 ✅ Json Data\
-✅ Dark Mode\
+✅ Dark Mode
 
 Some Screenshots
 
