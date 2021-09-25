@@ -12,6 +12,7 @@ Some Screenshots
 
 
 ![alt text](https://user-images.githubusercontent.com/51333268/134757653-5ea3d551-6447-4a3f-b62b-4284ab1b054b.PNG)
+<img src="https://user-images.githubusercontent.com/51333268/134757653-5ea3d551-6447-4a3f-b62b-4284ab1b054b.PNG" width="400" height="790">
 
 ![alt text](https://user-images.githubusercontent.com/51333268/134757693-654271c6-1735-4986-84fa-8a4d6e7eb215.PNG)
 
