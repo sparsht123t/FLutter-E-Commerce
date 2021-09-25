@@ -1,6 +1,11 @@
 Flutter E-commerece Application
 
-This is a shopping Application which includes functionality of authentication , addtocart and state management using VelocityX vxState
+✅ State Management (VxState)
+✅ Firebase Firestore
+✅ VelocityX
+✅ HeroAnimation
+✅ Json Data
+✅ Dark Mode
 
 Some Screenshots
 
@@ -16,3 +21,11 @@ Some Screenshots
 DARK MODE ENABLED
 
 ![alt text](https://user-images.githubusercontent.com/51333268/134757748-4dffe694-6ce8-42f5-9f1d-a83ea26864c5.PNG)
+
+
+
+How To Run
+-----------------------
+Clone this repo
+Run flutter packages get
+Run flutter run (remember open simulator or connect physical device, iOS auto run additional command pod install)
